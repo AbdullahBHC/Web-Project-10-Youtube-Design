@@ -1,0 +1,1239 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+}
+
+body header {
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  height: 5.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #202020;
+}
+
+body header .menu-logo {
+  width: 33.3%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .menu-logo .hamburger-menu {
+  margin-left: 1.8em;
+  width: 20px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body header .menu-logo .hamburger-menu span,
+body header .menu-logo .hamburger-menu span::before,
+body header .menu-logo .hamburger-menu span::after {
+  cursor: pointer;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+body header .menu-logo .hamburger-menu span {
+  -webkit-transform: translateY(7px);
+          transform: translateY(7px);
+}
+
+body header .menu-logo .hamburger-menu span::before {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+body header .menu-logo .hamburger-menu span::after {
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
+}
+
+body header .menu-logo .youtube {
+  cursor: pointer;
+  font-size: 1.75em;
+  color: white;
+  position: relative;
+  margin-left: 1em;
+}
+
+body header .menu-logo .youtube em {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  color: red;
+}
+
+body header .menu-logo p {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01cm;
+  color: white;
+  margin-left: 0.35em;
+  margin-bottom: 0.3em;
+}
+
+body header .menu-logo p sup {
+  font-weight: 300;
+  font-size: 0.5em;
+  color: #848484;
+}
+
+@media screen and (max-width: 510px) {
+  body header .menu-logo {
+    width: 50%;
+  }
+}
+
+body header .search {
+  width: 33.3%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .search input {
+  width: 80%;
+  height: 28px;
+  background-color: #121212;
+  border: 1px solid #303030;
+  padding-left: 0.75em;
+  color: white;
+}
+
+body header .search input::-webkit-input-placeholder {
+  color: #787878;
+  font-size: 1.125em;
+}
+
+body header .search input:-ms-input-placeholder {
+  color: #787878;
+  font-size: 1.125em;
+}
+
+body header .search input::-ms-input-placeholder {
+  color: #787878;
+  font-size: 1.125em;
+}
+
+body header .search input::placeholder {
+  color: #787878;
+  font-size: 1.125em;
+}
+
+body header .search .icon-search {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 25px;
+  height: 28px;
+  color: #7f7f7f;
+  font-size: 0.85em;
+  background-color: #313131;
+}
+
+body header .search .icon-mic {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.25em;
+  margin-left: 0.75em;
+}
+
+@media screen and (max-width: 510px) {
+  body header .search {
+    display: none;
+  }
+}
+
+body header .button {
+  width: 33.3%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+body header .button .icon-videocam {
+  cursor: pointer;
+  font-size: 1.25em;
+  margin-right: 1.5em;
+}
+
+body header .button .icon-list {
+  cursor: pointer;
+  font-size: 1.25em;
+  margin-right: 1.5em;
+}
+
+body header .button .icon-bell {
+  cursor: pointer;
+  font-size: 1.25em;
+  margin-right: 1.5em;
+}
+
+body header .button span {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  border-radius: 100%;
+  margin-right: 2em;
+}
+
+@media screen and (max-width: 510px) {
+  body header .button {
+    width: 50%;
+  }
+}
+
+body nav {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+
+body nav .menu {
+  display: block;
+  position: fixed;
+  top: 50px;
+  overflow-y: scroll;
+  min-width: 12%;
+  height: 100%;
+}
+
+body nav .menu .home {
+  background-color: #4c4c4c !important;
+}
+
+body nav .menu .home p {
+  color: white !important;
+}
+
+body nav .menu .home p em {
+  color: white !important;
+}
+
+body nav .menu .home p em span {
+  color: white !important;
+}
+
+body nav .menu .home,
+body nav .menu .explore,
+body nav .menu .subscriptions,
+body nav .menu .library,
+body nav .menu .history,
+body nav .menu .your-videos,
+body nav .menu .watch-later,
+body nav .menu .liked-videos,
+body nav .menu .show-more,
+body nav .menu .youtube-premium,
+body nav .menu .gaming,
+body nav .menu .live,
+body nav .menu .sport,
+body nav .menu .settings,
+body nav .menu .report-history,
+body nav .menu .help,
+body nav .menu .send-feedback {
+  cursor: pointer;
+  padding-left: 3.15vh;
+  padding-top: 7.5px;
+  margin: 2px 0px;
+  padding-bottom: 7.5px;
+}
+
+body nav .menu .home p,
+body nav .menu .explore p,
+body nav .menu .subscriptions p,
+body nav .menu .library p,
+body nav .menu .history p,
+body nav .menu .your-videos p,
+body nav .menu .watch-later p,
+body nav .menu .liked-videos p,
+body nav .menu .show-more p,
+body nav .menu .youtube-premium p,
+body nav .menu .gaming p,
+body nav .menu .live p,
+body nav .menu .sport p,
+body nav .menu .settings p,
+body nav .menu .report-history p,
+body nav .menu .help p,
+body nav .menu .send-feedback p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .menu .home p em,
+body nav .menu .explore p em,
+body nav .menu .subscriptions p em,
+body nav .menu .library p em,
+body nav .menu .history p em,
+body nav .menu .your-videos p em,
+body nav .menu .watch-later p em,
+body nav .menu .liked-videos p em,
+body nav .menu .show-more p em,
+body nav .menu .youtube-premium p em,
+body nav .menu .gaming p em,
+body nav .menu .live p em,
+body nav .menu .sport p em,
+body nav .menu .settings p em,
+body nav .menu .report-history p em,
+body nav .menu .help p em,
+body nav .menu .send-feedback p em {
+  color: #7a7a7a;
+  font-size: 1.25em;
+}
+
+body nav .menu .home p span,
+body nav .menu .explore p span,
+body nav .menu .subscriptions p span,
+body nav .menu .library p span,
+body nav .menu .history p span,
+body nav .menu .your-videos p span,
+body nav .menu .watch-later p span,
+body nav .menu .liked-videos p span,
+body nav .menu .show-more p span,
+body nav .menu .youtube-premium p span,
+body nav .menu .gaming p span,
+body nav .menu .live p span,
+body nav .menu .sport p span,
+body nav .menu .settings p span,
+body nav .menu .report-history p span,
+body nav .menu .help p span,
+body nav .menu .send-feedback p span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white !important;
+  line-height: 1.8;
+  font-size: 0.88em;
+  font-weight: 400;
+  font-family: "Roboto";
+  padding-left: 2.5vh;
+}
+
+body nav .menu .home:hover,
+body nav .menu .explore:hover,
+body nav .menu .subscriptions:hover,
+body nav .menu .library:hover,
+body nav .menu .history:hover,
+body nav .menu .your-videos:hover,
+body nav .menu .watch-later:hover,
+body nav .menu .liked-videos:hover,
+body nav .menu .show-more:hover,
+body nav .menu .youtube-premium:hover,
+body nav .menu .gaming:hover,
+body nav .menu .live:hover,
+body nav .menu .sport:hover,
+body nav .menu .settings:hover,
+body nav .menu .report-history:hover,
+body nav .menu .help:hover,
+body nav .menu .send-feedback:hover {
+  background-color: #383838;
+}
+
+body nav .menu .subscriptions,
+body nav .menu .show-more,
+body nav .menu .sport,
+body nav .menu .send-feedback {
+  margin-bottom: 10px;
+}
+
+body nav .menu .home,
+body nav .menu .library,
+body nav .menu .subscriptions-text,
+body nav .menu .more-from-youtube,
+body nav .menu .settings,
+body nav .menu .tags {
+  margin-top: 10px;
+}
+
+body nav .menu .show-more p em {
+  font-size: 0.8em;
+  padding-left: 0vh;
+}
+
+body nav .menu .subscriptions-text,
+body nav .menu .more-from-youtube {
+  padding-left: 3.15vh;
+  font-size: 0.88em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #a9a9a9;
+}
+
+body nav .menu .example-channel {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 3.15vh;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+body nav .menu .example-channel span img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+}
+
+body nav .menu .example-channel p {
+  color: #dedede;
+  line-height: 1.8;
+  font-size: 0.88em;
+  font-weight: 400;
+  font-family: "Roboto";
+  padding-left: 1.5vh;
+}
+
+body nav .menu .example-channel:hover {
+  background-color: #383838;
+}
+
+body nav .menu #first-channel {
+  margin-top: 10px;
+}
+
+body nav .menu .tags .tag-1,
+body nav .menu .tags .tag-2,
+body nav .menu .tags .tag-3,
+body nav .menu .tags .tag-4,
+body nav .menu .tags .tag-5,
+body nav .menu .tags .tag-6 {
+  padding-left: 2vh;
+  margin: 0px 15px;
+  color: #a0a0a0;
+  font-size: 0.75rem;
+  font-weight: 400;
+  font-family: 'Roboto';
+  line-height: 1.25em;
+}
+
+body nav .menu .tags .tag-4 {
+  margin-top: 0.8em;
+}
+
+body nav .menu .line {
+  width: 90%;
+  height: 1px;
+  background-color: #383838;
+}
+
+@media screen and (max-width: 1350px) {
+  body nav .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  body nav .menu {
+    display: block;
+  }
+}
+
+body nav .menu2 {
+  color: #202020;
+  position: fixed;
+  top: 70px;
+  width: 4%;
+  height: 100%;
+  padding-top: 0.5em;
+  color: white;
+}
+
+body nav .menu2 .home em {
+  color: white !important;
+}
+
+body nav .menu2 .home p {
+  color: white !important;
+}
+
+body nav .menu2 .home,
+body nav .menu2 .explore,
+body nav .menu2 .subscriptions,
+body nav .menu2 .library {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 35px 0;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+body nav .menu2 .home:hover,
+body nav .menu2 .explore:hover,
+body nav .menu2 .subscriptions:hover,
+body nav .menu2 .library:hover {
+  background-color: #383838;
+}
+
+body nav .menu2 .home em,
+body nav .menu2 .explore em,
+body nav .menu2 .subscriptions em,
+body nav .menu2 .library em {
+  color: #909090;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.3em;
+}
+
+body nav .menu2 .home p,
+body nav .menu2 .explore p,
+body nav .menu2 .subscriptions p,
+body nav .menu2 .library p {
+  color: #909090;
+  margin-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (max-width: 1350px) {
+  body nav .menu2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  body nav .menu2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body nav .menu2 {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body nav .menu2 {
+    display: none;
+  }
+}
+
+body nav .videos {
+  background-color: #181818;
+  right: 0;
+  top: 6vh;
+  position: absolute;
+  overflow-x: hidden;
+  z-index: 0;
+  width: 88%;
+  border: 1px solid red;
+  height: 100%;
+  padding-left: 7.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .videos .group-1,
+body nav .videos .group-2 {
+  width: 100%;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  body nav .videos .group-1 .area1,
+  body nav .videos .group-1 .area2,
+  body nav .videos .group-2 .area1,
+  body nav .videos .group-2 .area2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav .videos .group-1 .area1,
+  body nav .videos .group-2 .area1 {
+    margin-bottom: 7.5vh;
+  }
+}
+
+body nav .videos .group-1 .area1,
+body nav .videos .group-1 .area2,
+body nav .videos .group-2 .area1,
+body nav .videos .group-2 .area2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+
+body nav .videos .group-1 .area1 .video1,
+body nav .videos .group-1 .area2 .video1,
+body nav .videos .group-2 .area1 .video1,
+body nav .videos .group-2 .area2 .video1 {
+  cursor: pointer;
+  width: 360px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-thumbnail,
+body nav .videos .group-1 .area2 .video1 .video-thumbnail,
+body nav .videos .group-2 .area1 .video1 .video-thumbnail,
+body nav .videos .group-2 .area2 .video1 .video-thumbnail {
+  width: 100%;
+  height: 66.6%;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-thumbnail img,
+body nav .videos .group-1 .area2 .video1 .video-thumbnail img,
+body nav .videos .group-2 .area1 .video1 .video-thumbnail img,
+body nav .videos .group-2 .area2 .video1 .video-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text,
+body nav .videos .group-1 .area2 .video1 .video-channel-text,
+body nav .videos .group-2 .area1 .video1 .video-channel-text,
+body nav .videos .group-2 .area2 .video1 .video-channel-text {
+  width: 100%;
+  height: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .channel,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .channel,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .channel,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .channel {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .channel img,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .channel img,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .channel img,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .channel img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-top: 0.1em;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .text,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .text,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .text,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .text {
+  width: 85%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0.5vh;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .text .video-title,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .text .video-title,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .text .video-title,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .text .video-title {
+  width: 100%;
+  height: 60%;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .text .video-title p,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .text .video-title p,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .text .video-title p,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .text .video-title p {
+  font-size: 0.2em;
+  font-weight: 500;
+  line-height: 1.3em;
+  font-family: 'Roboto';
+  padding-top: 0.5em;
+}
+
+@media screen and (max-width: 1650px) {
+  body nav .videos .group-1 .area1 .video1 .video-channel-text .text .video-title p,
+  body nav .videos .group-1 .area2 .video1 .video-channel-text .text .video-title p,
+  body nav .videos .group-2 .area1 .video1 .video-channel-text .text .video-title p,
+  body nav .videos .group-2 .area2 .video1 .video-channel-text .text .video-title p {
+    height: 85%;
+    overflow: hidden;
+  }
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .text .channel-name,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .text .channel-name,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .text .channel-name,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .text .channel-name {
+  height: 17%;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .text .channel-name p,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .text .channel-name p,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .text .channel-name p,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .text .channel-name p {
+  font-size: 0.18em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #aaa;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .text .views-time,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .text .views-time,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .text .views-time,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .text .views-time {
+  height: 17%;
+  margin-bottom: 0.15em;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text .text .views-time p,
+body nav .videos .group-1 .area2 .video1 .video-channel-text .text .views-time p,
+body nav .videos .group-2 .area1 .video1 .video-channel-text .text .views-time p,
+body nav .videos .group-2 .area2 .video1 .video-channel-text .text .views-time p {
+  font-size: 0.18em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #aaa;
+}
+
+body nav .videos .group-1 .area1 .video1 .video-channel-text #pre .video-title,
+body nav .videos .group-1 .area2 .video1 .video-channel-text #pre .video-title,
+body nav .videos .group-2 .area1 .video1 .video-channel-text #pre .video-title,
+body nav .videos .group-2 .area2 .video1 .video-channel-text #pre .video-title {
+  height: 30%;
+}
+
+@media screen and (max-width: 1300px) {
+  body nav .videos .group-1 .area1 .video1,
+  body nav .videos .group-1 .area2 .video1,
+  body nav .videos .group-2 .area1 .video1,
+  body nav .videos .group-2 .area2 .video1 {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav .videos .group-1 .area1 .video1,
+  body nav .videos .group-1 .area2 .video1,
+  body nav .videos .group-2 .area1 .video1,
+  body nav .videos .group-2 .area2 .video1 {
+    width: 60%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body nav .videos .group-1 .area1,
+body nav .videos .group-2 .area1 {
+  margin-right: -2vh;
+}
+
+body nav .videos .group-1 .area2,
+body nav .videos .group-2 .area2 {
+  margin-left: -1.5vh;
+}
+
+@media screen and (max-width: 1350px) {
+  body nav .videos .group-1 .area1,
+  body nav .videos .group-2 .area1 {
+    margin-right: 0.125vh;
+  }
+  body nav .videos .group-1 .area2,
+  body nav .videos .group-2 .area2 {
+    margin-left: 0.125vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body nav .videos .group-1 .area2,
+  body nav .videos .group-1 .area1,
+  body nav .videos .group-2 .area2,
+  body nav .videos .group-2 .area1 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body nav .videos .group-1,
+  body nav .videos .group-2 {
+    height: 300vh;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav .videos .group-2,
+  body nav .videos .group-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+body nav .videos .group-3,
+body nav .videos .group-4 {
+  width: 100%;
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  body nav .videos .group-3 .area1,
+  body nav .videos .group-3 .area2,
+  body nav .videos .group-4 .area1,
+  body nav .videos .group-4 .area2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav .videos .group-3 .area1,
+  body nav .videos .group-4 .area1 {
+    margin-bottom: 7.5vh;
+  }
+}
+
+body nav .videos .group-3 .area1,
+body nav .videos .group-3 .area2,
+body nav .videos .group-4 .area1,
+body nav .videos .group-4 .area2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 50%;
+}
+
+body nav .videos .group-3 .area1 .video1,
+body nav .videos .group-3 .area2 .video1,
+body nav .videos .group-4 .area1 .video1,
+body nav .videos .group-4 .area2 .video1 {
+  cursor: pointer;
+  width: 360px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px 10px;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-thumbnail,
+body nav .videos .group-3 .area2 .video1 .video-thumbnail,
+body nav .videos .group-4 .area1 .video1 .video-thumbnail,
+body nav .videos .group-4 .area2 .video1 .video-thumbnail {
+  width: 100%;
+  height: 66.6%;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-thumbnail img,
+body nav .videos .group-3 .area2 .video1 .video-thumbnail img,
+body nav .videos .group-4 .area1 .video1 .video-thumbnail img,
+body nav .videos .group-4 .area2 .video1 .video-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text,
+body nav .videos .group-3 .area2 .video1 .video-channel-text,
+body nav .videos .group-4 .area1 .video1 .video-channel-text,
+body nav .videos .group-4 .area2 .video1 .video-channel-text {
+  width: 100%;
+  height: 33.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .channel,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .channel,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .channel,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .channel {
+  width: 15%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .channel img,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .channel img,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .channel img,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .channel img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-top: 0.1em;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .text,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .text,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .text,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .text {
+  width: 85%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 0.5vh;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .text .video-title,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .text .video-title,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .text .video-title,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .text .video-title {
+  width: 100%;
+  height: 60%;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .text .video-title p,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .text .video-title p,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .text .video-title p,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .text .video-title p {
+  font-size: 0.2em;
+  font-weight: 500;
+  line-height: 1.3em;
+  font-family: 'Roboto';
+  padding-top: 0.5em;
+}
+
+@media screen and (max-width: 1650px) {
+  body nav .videos .group-3 .area1 .video1 .video-channel-text .text .video-title p,
+  body nav .videos .group-3 .area2 .video1 .video-channel-text .text .video-title p,
+  body nav .videos .group-4 .area1 .video1 .video-channel-text .text .video-title p,
+  body nav .videos .group-4 .area2 .video1 .video-channel-text .text .video-title p {
+    height: 85%;
+    overflow: hidden;
+  }
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .text .channel-name,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .text .channel-name,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .text .channel-name,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .text .channel-name {
+  height: 17%;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .text .channel-name p,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .text .channel-name p,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .text .channel-name p,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .text .channel-name p {
+  font-size: 0.18em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #aaa;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .text .views-time,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .text .views-time,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .text .views-time,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .text .views-time {
+  height: 17%;
+  margin-bottom: 0.15em;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text .text .views-time p,
+body nav .videos .group-3 .area2 .video1 .video-channel-text .text .views-time p,
+body nav .videos .group-4 .area1 .video1 .video-channel-text .text .views-time p,
+body nav .videos .group-4 .area2 .video1 .video-channel-text .text .views-time p {
+  font-size: 0.18em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #aaa;
+}
+
+body nav .videos .group-3 .area1 .video1 .video-channel-text #pre .video-title,
+body nav .videos .group-3 .area2 .video1 .video-channel-text #pre .video-title,
+body nav .videos .group-4 .area1 .video1 .video-channel-text #pre .video-title,
+body nav .videos .group-4 .area2 .video1 .video-channel-text #pre .video-title {
+  height: 30%;
+}
+
+@media screen and (max-width: 1300px) {
+  body nav .videos .group-3 .area1 .video1,
+  body nav .videos .group-3 .area2 .video1,
+  body nav .videos .group-4 .area1 .video1,
+  body nav .videos .group-4 .area2 .video1 {
+    width: 300px;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav .videos .group-3 .area1 .video1,
+  body nav .videos .group-3 .area2 .video1,
+  body nav .videos .group-4 .area1 .video1,
+  body nav .videos .group-4 .area2 .video1 {
+    width: 60%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+body nav .videos .group-3 .area1,
+body nav .videos .group-4 .area1 {
+  margin-right: -2vh;
+}
+
+body nav .videos .group-3 .area2,
+body nav .videos .group-4 .area2 {
+  margin-left: -1.5vh;
+}
+
+@media screen and (max-width: 1350px) {
+  body nav .videos .group-3 .area1,
+  body nav .videos .group-4 .area1 {
+    margin-right: 0.125vh;
+  }
+  body nav .videos .group-3 .area2,
+  body nav .videos .group-4 .area2 {
+    margin-left: 0.125vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body nav .videos .group-3 .area2,
+  body nav .videos .group-3 .area1,
+  body nav .videos .group-4 .area2,
+  body nav .videos .group-4 .area1 {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav .videos .group-3,
+  body nav .videos .group-4 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body nav .videos .group-3,
+  body nav .videos .group-4 {
+    height: 300vh;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  body nav .videos {
+    width: 96%;
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  body nav .videos {
+    width: 88%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body nav .videos {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  body nav .videos {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav .videos {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body nav nav {
+    height: 600vh;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body nav nav {
+    height: 1200vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

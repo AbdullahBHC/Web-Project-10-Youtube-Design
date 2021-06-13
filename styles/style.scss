@@ -1,0 +1,910 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #202020;
+
+    header {
+        z-index: 1;
+        position: fixed;
+        width: 100%;
+        height: 5.5vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #202020;
+
+        .menu-logo {
+            width: 33.3%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .hamburger-menu {
+                margin-left: 1.8em;
+                width: 20px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+
+                span,
+                span::before,
+                span::after {
+                    cursor: pointer;
+                    content: "";
+                    display: block;
+                    width: 18px;
+                    height: 2px;
+                    background-color: white;
+                    border-radius: 10px;
+                }
+
+                span {
+                    transform: translateY(7px);
+
+                    &::before {
+                        transform: translateY(5px);
+                    }
+
+                    &::after {
+                        transform: translateY(8px);
+                    }
+                }
+            }
+
+            .youtube {
+                cursor: pointer;
+                font-size: 1.75em;
+                color: white;
+                position: relative;
+                margin-left: 1em;
+
+                em {
+                    position: absolute;
+                    top: 0;
+                    left: -20%;
+                    color: red;
+                }
+            }
+
+            p {
+                cursor: pointer;
+                display: inline-block;
+                font-size: 20px;
+                font-family: Roboto, sans-serif;
+                font-weight: 600;
+                letter-spacing: -0.01cm;
+                color: white;
+                margin-left: 0.35em;
+                margin-bottom: 0.3em;
+
+                sup {
+                    font-weight: 300;
+                    font-size: 0.5em;
+                    color: #848484;
+                }
+            }
+        }
+
+        @media screen and (max-width:510px) {
+            .menu-logo {
+                width: 50%;
+            }
+        }
+
+        .search {
+            width: 33.3%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            input {
+                width: 80%;
+                height: 28px;
+                background-color: #121212;
+                border: 1px solid #303030;
+                padding-left: 0.75em;
+                color: white;
+
+                &::placeholder {
+                    color: #787878;
+                    font-size: 1.125em;
+                }
+            }
+
+            .icon-search {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                padding: 0px 25px;
+                height: 28px;
+                color: #7f7f7f;
+                font-size: 0.85em;
+                background-color: #313131;
+            }
+
+            .icon-mic {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                color: white;
+                font-size: 1.25em;
+                margin-left: 0.75em;
+            }
+        }
+
+        @media screen and (max-width:510px) {
+            .search {
+                display: none;
+            }
+        }
+
+        .button {
+            width: 33.3%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            color: white;
+
+            .icon-videocam {
+                cursor: pointer;
+                font-size: 1.25em;
+                margin-right: 1.5em;
+            }
+
+            .icon-list {
+                cursor: pointer;
+                font-size: 1.25em;
+                margin-right: 1.5em;
+            }
+
+            .icon-bell {
+                cursor: pointer;
+                font-size: 1.25em;
+                margin-right: 1.5em;
+            }
+
+            span {
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                background-color: black;
+                border-radius: 100%;
+                margin-right: 2em;
+            }
+        }
+
+        @media screen and (max-width:510px) {
+            .button {
+                width: 50%;
+            }
+        }
+    }
+
+    nav {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+
+        .menu {
+            display: block;
+            position: fixed;
+            top: 50px;
+            overflow-y: scroll;
+            min-width: 12%;
+            height: 100%;
+
+            .home {
+                background-color: #4c4c4c !important;
+
+                p {
+                    color: white !important;
+
+                    em {
+                        color: white !important;
+
+                        span {
+
+                            color: white !important;
+                        }
+                    }
+                }
+            }
+
+            .home,
+            .explore,
+            .subscriptions,
+            .library,
+            .history,
+            .your-videos,
+            .watch-later,
+            .liked-videos,
+            .show-more,
+            .youtube-premium,
+            .gaming,
+            .live,
+            .sport,
+            .settings,
+            .report-history,
+            .help,
+            .send-feedback {
+                cursor: pointer;
+                padding-left: 3.15vh;
+                padding-top: 7.5px;
+                margin: 2px 0px;
+                padding-bottom: 7.5px;
+
+                p {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    em {
+                        color: #7a7a7a;
+                        font-size: 1.25em;
+                    }
+
+                    span {
+                        display: inline-flex;
+                        align-items: center;
+                        color: white !important;
+                        line-height: 1.8;
+                        font-size: 0.88em;
+                        font-weight: 400;
+                        font-family: "Roboto";
+                        padding-left: 2.5vh;
+                    }
+                }
+
+                &:hover {
+                    background-color: #383838;
+                }
+            }
+
+
+
+            .subscriptions,
+            .show-more,
+            .sport,
+            .send-feedback {
+                margin-bottom: 10px;
+            }
+
+            .home,
+            .library,
+            .subscriptions-text,
+            .more-from-youtube,
+            .settings,
+            .tags {
+                margin-top: 10px;
+            }
+
+            .show-more {
+
+                p {
+                    em {
+                        font-size: 0.8em;
+                        padding-left: 0vh;
+                    }
+                }
+            }
+
+            .subscriptions-text,
+            .more-from-youtube {
+                padding-left: 3.15vh;
+                font-size: 0.88em;
+                font-family: 'Roboto';
+                font-weight: 400;
+                color: #a9a9a9;
+            }
+
+            .example-channel {
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                padding-left: 3.15vh;
+                padding-top: 7.5px;
+                padding-bottom: 7.5px;
+
+                span {
+
+                    img {
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 100%;
+                    }
+                }
+
+                p {
+                    color: #dedede;
+                    line-height: 1.8;
+                    font-size: 0.88em;
+                    font-weight: 400;
+                    font-family: "Roboto";
+                    padding-left: 1.5vh;
+                }
+
+                &:hover {
+                    background-color: #383838;
+                }
+
+            }
+
+            #first-channel {
+                margin-top: 10px;
+            }
+
+            .tags {
+
+                .tag-1,
+                .tag-2,
+                .tag-3,
+                .tag-4,
+                .tag-5,
+                .tag-6 {
+                    padding-left: 2vh;
+                    margin: 0px 15px;
+                    color: #a0a0a0;
+                    font-size: 0.75rem;
+                    font-weight: 400;
+                    font-family: 'Roboto';
+                    line-height: 1.25em;
+
+                }
+
+                .tag-4 {
+                    margin-top: 0.8em;
+                }
+            }
+
+            .line {
+                width: 90%;
+                height: 1px;
+                background-color: #383838;
+            }
+
+            @media screen and (max-width:1350px) {
+                display: none;
+            }
+
+            @media screen and (min-width:1350px) {
+                display: block;
+            }
+
+        }
+
+        .menu2 {
+            color: #202020;
+            position: fixed;
+            top: 70px;
+            width: 4%;
+            height: 100%;
+            padding-top: 0.5em;
+            color: white;
+
+            .home {
+                em {
+                    color: white !important;
+                }
+
+                p {
+                    color: white !important;
+                }
+            }
+
+            .home,
+            .explore,
+            .subscriptions,
+            .library {
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 35px 0;
+                width: 100%;
+                height: 50px;
+                margin-bottom: 10px;
+
+                &:hover {
+                    background-color: #383838;
+                }
+
+                em {
+                    color: #909090;
+                    display: flex;
+                    justify-content: center;
+                    font-size: 1.3em;
+                }
+
+                p {
+                    color: #909090;
+                    margin-top: 5px;
+                    font-size: 10px;
+                    font-weight: 400;
+                    font-family: 'Roboto';
+                    display: flex;
+                    justify-content: center;
+
+                }
+            }
+
+
+            @media screen and (max-width:1350px) {
+                display: block;
+            }
+
+            @media screen and (min-width:1350px) {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .menu2 {
+                width: 10%;
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            .menu2 {
+                display: none;
+            }
+        }
+
+        .videos {
+            background-color: #181818;
+            right: 0;
+            top: 6vh;
+            position: absolute;
+            overflow-x: hidden;
+            z-index: 0;
+            width: 88%;
+            border: 1px solid red;
+            height: 100%;
+            padding-left: 7.5vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: right;
+            align-items: center;
+
+            .group-1,
+            .group-2 {
+                width: 100%;
+                height: 320px;
+                display: flex;
+                flex-direction: row;
+
+
+                @media screen and (max-width:900px) {
+
+                    .area1,
+                    .area2 {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                @media screen and (max-width:510px) {
+                    .area1 {
+                        margin-bottom: 7.5vh;
+                    }
+                }
+
+                .area1,
+                .area2 {
+                    display: flex;
+                    flex-direction: row;
+                    width: 50%;
+
+                    .video1 {
+                        cursor: pointer;
+                        width: 360px;
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 30px 10px;
+
+                        .video-thumbnail {
+                            width: 100%;
+                            height: 66.6%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .video-channel-text {
+                            width: 100%;
+                            height: 33.3%;
+                            display: flex;
+                            flex-direction: row;
+
+                            .channel {
+                                width: 15%;
+                                height: 100%;
+                                display: flex;
+                                align-items: flex-start;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 100%;
+                                    margin-top: 0.1em;
+                                }
+                            }
+
+                            .text {
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                padding-left: 0.5vh;
+
+                                .video-title {
+                                    width: 100%;
+                                    height: 60%;
+
+                                    p {
+                                        font-size: 0.2em;
+                                        font-weight: 500;
+                                        line-height: 1.3em;
+                                        font-family: 'Roboto';
+                                        padding-top: 0.5em;
+                                    }
+
+                                    @media screen and (max-width:1650px) {
+                                        p {
+                                            height: 85%;
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+
+                                .channel-name {
+                                    height: 17%;
+
+                                    p {
+                                        font-size: 0.18em;
+                                        font-family: 'Roboto';
+                                        font-weight: 400;
+                                        color: #aaa;
+                                    }
+                                }
+
+                                .views-time {
+                                    height: 17%;
+                                    margin-bottom: 0.15em;
+
+                                    p {
+                                        font-size: 0.18em;
+                                        font-family: 'Roboto';
+                                        font-weight: 400;
+                                        color: #aaa;
+                                    }
+                                }
+                            }
+
+                            #pre {
+                                .video-title {
+                                    height: 30%;
+                                }
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width:1300px) {
+                        .video1 {
+                            width: 300px;
+                            height: 250px;
+                        }
+                    }
+
+
+                    @media screen and (max-width:510px) {
+                        .video1 {
+                            width: 60%;
+                            height: 50%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+
+                }
+
+                .area1 {
+                    margin-right: -2vh;
+                }
+
+                .area2 {
+                    margin-left: -1.5vh;
+                }
+
+                @media screen and (max-width:1350px) {
+                    .area1 {
+                        margin-right: 0.125vh;
+                    }
+
+                    .area2 {
+                        margin-left: 0.125vh;}
+                }
+
+                @media screen and (max-width:900px) {
+
+                    .area2,
+                    .area1 {
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                }
+
+            }
+
+            @media screen and (max-width:900px) {
+
+                .group-1,
+                .group-2 {
+                    height: 300vh;
+                }
+            }
+
+            @media screen and (max-width:510px) {
+
+                .group-2,
+                .group-1 {
+                    flex-direction: column;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            .group-3,
+            .group-4 {
+                width: 100%;
+                height: 330px;
+                display: flex;
+                flex-direction: row;
+
+
+
+
+                @media screen and (max-width:900px) {
+
+                    .area1,
+                    .area2 {
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+
+                @media screen and (max-width:510px) {
+                    .area1 {
+                        margin-bottom: 7.5vh;
+                    }
+                }
+
+
+
+
+
+                .area1,
+                .area2 {
+                    display: flex;
+                    flex-direction: row;
+                    width: 50%;
+
+                    .video1 {
+                        cursor: pointer;
+                        width: 360px;
+                        height: 300px;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 30px 10px;
+
+                        .video-thumbnail {
+                            width: 100%;
+                            height: 66.6%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .video-channel-text {
+                            width: 100%;
+                            height: 33.3%;
+                            display: flex;
+                            flex-direction: row;
+
+                            .channel {
+                                width: 15%;
+                                height: 100%;
+                                display: flex;
+                                align-items: flex-start;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                    border-radius: 100%;
+                                    margin-top: 0.1em;
+                                }
+                            }
+
+                            .text {
+                                width: 85%;
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                padding-left: 0.5vh;
+
+                                .video-title {
+                                    width: 100%;
+                                    height: 60%;
+
+                                    p {
+                                        font-size: 0.2em;
+                                        font-weight: 500;
+                                        line-height: 1.3em;
+                                        font-family: 'Roboto';
+                                        padding-top: 0.5em;
+                                    }
+
+                                    @media screen and (max-width:1650px) {
+                                        p {
+                                            height: 85%;
+                                            overflow: hidden;
+                                        }
+                                    }
+                                }
+
+                                .channel-name {
+                                    height: 17%;
+
+                                    p {
+                                        font-size: 0.18em;
+                                        font-family: 'Roboto';
+                                        font-weight: 400;
+                                        color: #aaa;
+                                    }
+                                }
+
+                                .views-time {
+                                    height: 17%;
+                                    margin-bottom: 0.15em;
+
+                                    p {
+                                        font-size: 0.18em;
+                                        font-family: 'Roboto';
+                                        font-weight: 400;
+                                        color: #aaa;
+                                    }
+                                }
+                            }
+
+                            #pre {
+                                .video-title {
+                                    height: 30%;
+                                }
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width:1300px) {
+                        .video1 {
+                            width: 300px;
+                            height: 250px;
+                        }
+                    }
+
+
+                    @media screen and (max-width:510px) {
+                        .video1 {
+                            width: 60%;
+                            height: 50%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+
+                }
+
+                .area1 {
+                    margin-right: -2vh;
+                }
+
+                .area2 {
+                    margin-left: -1.5vh;
+                }
+
+                @media screen and (max-width:1350px) {
+                    .area1 {
+                        margin-right: 0.125vh;
+                    }
+
+                    .area2 {
+                        margin-left: 0.125vh;}
+                }
+
+                @media screen and (max-width:900px) {
+
+                    .area2,
+                    .area1 {
+                        width: 100%;
+                        flex-direction: column;
+                    }
+                }
+
+            }
+
+
+            @media screen and (max-width:510px) {
+
+                .group-3,
+                .group-4 {
+                    flex-direction: column;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+
+            @media screen and (max-width:900px) {
+
+                .group-3,
+                .group-4 {
+                    height: 300vh;
+                }
+            }
+
+            @media screen and (max-width:1350px) {
+                width: 96%;
+            }
+
+            @media screen and (min-width:1350px) {
+                width: 88%;
+            }
+
+            @media screen and (max-width:900px) {
+
+                width: 90%;
+
+            }
+        }
+
+        @media screen and (max-width:850px) {
+            .videos {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width:510px) {
+            .videos {
+                padding: 0;
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            nav {
+                height: 600vh;
+            }
+        }
+
+        @media screen and (max-width:510px) {
+            nav {
+                height: 1200vh;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/icon-font.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>YouTube</title>
+</head>
+
+<body id="body">
+
+    <header>
+
+        <div class="menu-logo">
+            <div id="btn" class="hamburger-menu" style="cursor: pointer;">
+                <span></span>
+            </div>
+            <span class="youtube" title="Youtube Ana Sayfası">∎ <em class="icon-youtube"></em></span>
+            <p title="Youtube Ana Sayfası">YouTube <sup>TR</sup></p>
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Ara">
+            <em class="icon-search" title="Ara"></em>
+            <em class="icon-mic" title="Sesle arama yapın"></em>
+        </div>
+
+        <div class="button">
+            <em class="icon-videocam" title="Oluştur"></em>
+            <em class="icon-list" title="Youtube uygulamaları"></em>
+            <em class="icon-bell" title="Bildirimler"></em>
+            <span></span>
+        </div>
+
+    </header>
+
+    <nav>
+
+        <div class="menu" id="menu1">
+            <div class="home">
+                <p> <em class="icon-home"></em> <span>Home</span></p>
+            </div>
+            <div class="explore">
+                <p> <em class="icon-compass"></em> <span>Explore</span></p>
+            </div>
+            <div class="subscriptions">
+                <p><em class="icon-archive"></em><span>Subscriptions</span></p>
+            </div>
+            <div class="line"></div>
+            <div class="library">
+                <p><em class="icon-book"></em><span>Library</span></p>
+            </div>
+            <div class="history">
+                <p><em class="icon-clock-back"></em><span>History</span></p>
+            </div>
+            <div class="your-videos">
+                <p><em class="icon-book-1"></em><span>Your Videos</span></p>
+            </div>
+            <div class="watch-later">
+                <p><em class="icon-clock"></em><span>Watch Later</span></p>
+            </div>
+            <div class="liked-videos">
+                <p><em class="icon-like"></em><span>Liked Videos</span></p>
+            </div>
+            <div class="show-more">
+                <p><em class="icon-down"></em><span>Show More</span></p>
+            </div>
+            <div class="line"></div>
+            <div class="subscriptions-text">
+                <p>SUBSCRIPTIONS</p>
+            </div>
+            <div class="example-channel" id="first-channel">
+                <span><img src="images/ruhi.jpg" alt=""></span>
+                <p>Ruhi Çenet Medya</p>
+            </div>
+            <div class="example-channel">
+                <span><img src="images/engin.jpg" alt=""></span>
+                <p>Engin Demiroğ</p>
+            </div>
+            <div class="example-channel">
+                <span><img src="images/atom.jpg" alt=""></span>
+                <p>at0m</p>
+            </div>
+            <div class="example-channel">
+                <span><img src="images/dogan.jpg" alt=""></span>
+                <p>Doğan Kabak</p>
+            </div>
+            <div class="example-channel">
+                <span><img src="images/lemur.jpg" alt=""></span>
+                <p>Mendebur Lemur</p>
+            </div>
+            <div class="show-more">
+                <p> <em class="icon-down"></em><span>Show x More</span></p>
+            </div>
+            <div class="line"></div>
+            <div class="more-from-youtube">
+                <p>MORE FROM YOUTUBE</p>
+            </div>
+            <div class="youtube-premium">
+                <p><em class="icon-youtube"></em><span>Youtube Premium</span></p>
+            </div>
+            <div class="gaming">
+                <p> <em class="icon-gamepad"></em><span>Gaming</span></p>
+            </div>
+            <div class="live">
+                <p><em class="icon-signal"></em><span>Live</span></p>
+            </div>
+            <div class="sport">
+                <p> <em class="icon-glass"></em><span>Sport</span></p>
+            </div>
+            <div class="line"></div>
+            <div class="settings">
+                <p> <em class="icon-settings"></em><span>Settings</span></p>
+            </div>
+            <div class="report-history">
+                <p> <em class="icon-flag"></em><span>Report History</span></p>
+            </div>
+            <div class="help">
+                <p> <em class="icon-help"></em><span>Help</span></p>
+            </div>
+            <div class="send-feedback">
+                <p> <em class="icon-attention"></em><span>Send Feedback</span></p>
+            </div>
+            <div class="line"></div>
+            <div class="tags">
+                <div class="tag-1">
+                    <p><span>About</span> <span>Press</span> <span>Copyright</span></p>
+                </div>
+                <div class="tag-2">
+                    <p><span>Contact us</span> <span>Creator</span> <span>Advertise</span></p>
+                </div>
+                <div class="tag-3">
+                    <p>Developers</p>
+                </div>
+                <div class="tag-4">
+                    <p><span>Terms</span> <span>Privacy</span> <span>Policy & Safety</span></p>
+                </div>
+                <div class="tag-5">
+                    <p><span>How Youtube works</span></p>
+                </div>
+                <div class="tag-6">
+                    <p><span>Test new features</span></p>
+                </div>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+
+        <div class="menu2" id="menu2">
+            <div class="home">
+                <a href="#" style="text-decoration: none; color: white;">
+                    <em class="icon-home"></em>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="explore">
+                <a href="#" style="text-decoration: none; color: white;">
+                    <em class="icon-compass"></em>
+                    <p>Explore</p>
+                </a>
+            </div>
+            <div class="subscriptions">
+                <a href="#" style="text-decoration: none; color: white;">
+                    <em class="icon-archive"></em>
+                    <p>Subscriptions</p>
+                </a>
+            </div>
+            <div class="library">
+                <a href="#" style="text-decoration: none; color: white;">
+                    <em class="icon-book"></em>
+                    <p>Library</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="videos" id="videox" style="color: white; font-size: 5em;">
+
+            <div class="group-1">
+
+                <div class="area1">
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/1.webp" alt="">
+                        </div>
+                        <div class="video-channel-text"
+                            title="2,5 saatte ne kadar kazandım? | Volta RS7 | Moto kurye Günlüğü 12 bölüm">
+                            <div class="channel">
+                                <img src="images/kolacan.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="video-title">
+                                    <p id="group1-video1">2,5 saatte ne kadar kazandım? | Volta RS7 | Moto kurye Günlüğü
+                                        12 bölüm</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>Kolaçan Motovlog</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>23k views ・<span>6 hours ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/atomvideo.webp" alt="">
+                        </div>
+                        <div class="video-channel-text" title="2020'Yİ OYUN YAPTIM">
+                            <div class="channel">
+                                <img src="images/atom.jpg" alt="">
+                            </div>
+                            <div class="text" id="pre">
+                                <div class="video-title">
+                                    <p>2020'Yİ OYUN YAPTIM</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>at0m</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>320k views ・<span>5 months ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="area2">
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/autotopnlvideo.webp" alt="">
+                        </div>
+                        <div class="video-channel-text"
+                            title="Audi RS6 PERFORMANCE 700 HP AUTOBAHN POV ACCELERATION & TOP SPEED by AutoTopNL">
+                            <div class="channel">
+                                <img src="images/autotopnl.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="video-title">
+                                    <p>Audi RS6 PERFORMANCE 700 HP AUTOBAHN POV ACCELERATION...</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>AutoTopNL</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>3,9M views ・<span>4 years ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/doganvideo.webp" alt="">
+                        </div>
+                        <div class="video-channel-text" title="2 Metrelik Adam Küçük Bir Arabayı Kullanabilir Mi?">
+                            <div class="channel">
+                                <img src="images/dogan.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="video-title">
+                                    <p>2 Metrelik Adam Küçük Bir Arabayı Kullanabilir Mi?</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>Doğan Kabak</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>350k views ・<span>6 days ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="group-2">
+                <div class="area1">
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/onurvideo.webp" alt="">
+                        </div>
+                        <div class="video-channel-text"
+                            title="MANSUR YAVAŞ'IN İNTROSUNU YAPIYORUZ! | After Effects Dersleri">
+                            <div class="channel">
+                                <img src="images/onur.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="video-title">
+                                    <p>MANSUR YAVAŞ'IN İNTROSUNU YAPIYORUZ! | After Effects Dersleri</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>Onur Naci Ozturkler</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>13k views ・<span>2 days ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/enginvideo.webp" alt="">
+                        </div>
+                        <div class="video-channel-text" title="Canlı - 6 Saatlik PYTHON Programlama Kampı / Dersleri">
+                            <div class="channel">
+                                <img src="images/engin.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="video-title">
+                                    <p>Canlı - 6 Saatlik PYTHON Programlama Kampı / Dersleri</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>Engin Demiroğ</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>140K views ・<span>1 year ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="area2">
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/frontend serisi.webp" alt="">
+                        </div>
+                        <div class="video-channel-text" title="#frontend - Web Arayüzü Kodluyoruz (Bölüm 2)">
+                            <div class="channel">
+                                <img src="images/prototurk.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="video-title">
+                                    <p>#frontend - Web Arayüzü Kodluyoruz (Bölüm 2)</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>PROTOTURK</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>17k views ・<span>1 year ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="video1">
+                        <div class="video-thumbnail">
+                            <img src="images/kolacanvideo.webp" alt="">
+                        </div>
+                        <div class="video-channel-text"
+                            title="Telefonla Oynuyordum Seni Görmedim | Motosiklet Kazaları ve Kavgaları | sizden gelenler 14">
+                            <div class="channel">
+                                <img src="images/kolacan.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <div class="video-title">
+                                    <p>Telefonla Oynuyordum Seni Görmedim | Motosiklet Kazaları ve Kavgaları...</p>
+                                </div>
+                                <div class="channel-name">
+                                    <p>Kolaçan Motovlog</p>
+                                </div>
+                                <div class="views-time">
+                                    <p>3,3M views ・<span>9 months ago</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="group-3">
+<div class="area1">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/kucukburjuvazivideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="FİAT ALBEA İNCELEME & TEST SÜRÜŞÜ">
+            <div class="channel">
+                <img src="images/kucukburjuvazi.jpg" alt="">
+            </div>
+            <div class="text" id="pre">
+                <div class="video-title">
+                    <p>FİAT ALBEA İNCELEME & TEST SÜRÜŞÜ</p>
+                </div>
+                <div class="channel-name">
+                    <p>Küçük Burjuvazi</p>
+                </div>
+                <div class="views-time">
+                    <p>239k views ・<span>6 months ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/lemurvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="Çin'den Keşke Bundanım Olsa Diyeceğiniz Ürünler! (Toplu Paket Açılışı)">
+            <div class="channel">
+                <img src="images/lemur.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>Çin'den "Keşke Bundanım Olsa" Diyeceğiniz Ürünler! (Toplu Paket Açılışı)</p>
+                </div>
+                <div class="channel-name">
+                    <p>Mendebur Lemur</p>
+                </div>
+                <div class="views-time">
+                    <p>370k views ・<span>7 hours ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="area2">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/oguzhanvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="EN İYİ FİYAT-PERFORMANS SUV MU? | YENİ FORD KUGA TİTANİUM 2020 |1.5 DİZEL 120 HP 300NM 8 VİTES|POV">
+            <div class="channel">
+                <img src="images/oguzhan.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>EN İYİ FİYAT-PERFORMANS SUV MU? | YENİ FORD KUGA TİTANİUM 2020...</p>
+                </div>
+                <div class="channel-name">
+                    <p>Oğuzhan YILDIRIM</p>
+                </div>
+                <div class="views-time">
+                    <p>223k views ・<span>5 months ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/nygmavideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="ŞEYTANIN HİZMETKARI (GECE AVCISI LAKAPLI SERİ KATİL)">
+            <div class="channel">
+                <img src="images/nygma.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>ŞEYTANIN HİZMETKARI (GECE AVCISI LAKAPLI SERİ KATİL)</p>
+                </div>
+                <div class="channel-name">
+                    <p>Nygma</p>
+                </div>
+                <div class="views-time">
+                    <p>59k views ・<span>10 hours ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+            </div>
+
+            <div class="group-4">
+<div class="area1">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/onurvideo2.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="SIFIRDAN Adobe PHOTOSHOP CC 2020 Dersleri (Fotoğraf Editleme)">
+            <div class="channel">
+                <img src="images/onur.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>SIFIRDAN Adobe PHOTOSHOP CC 2020 Dersleri (Fotoğraf Editleme)</p>
+                </div>
+                <div class="channel-name">
+                    <p>Onur Naci Ozturkler</p>
+                </div>
+                <div class="views-time">
+                    <p>366k views ・<span>1 years ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/orkunvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="24 SAAT AĞAÇ EVDE MAHSUR KALDIM!">
+            <div class="channel">
+                <img src="images/orkun.jpg" alt="">
+            </div>
+            <div class="text" id="pre">
+                <div class="video-title">
+                    <p>24 SAAT AĞAÇ EVDE MAHSUR KALDIM!</p>
+                </div>
+                <div class="channel-name">
+                    <p>Orkun Işıtmak</p>
+                </div>
+                <div class="views-time">
+                    <p>1,3M views ・<span>1 day ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="area2">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/prototurkvideo2.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="#frontendaily - 27">
+            <div class="channel">
+                <img src="images/prototurk.jpg" alt="">
+            </div>
+            <div class="text" id="pre">
+                <div class="video-title">
+                    <p>#frontendaily - 27</p>
+                </div>
+                <div class="channel-name">
+                    <p>PROTOTURK</p>
+                </div>
+                <div class="views-time">
+                    <p>2,4k views ・<span>1 week ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/ruhivideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="TÜRK YAPIMI ROBOTLAR (ADA, ARAT, AKINCI VS.)">
+            <div class="channel">
+                <img src="images/ruhi.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>TÜRK YAPIMI ROBOTLAR (ADA, ARAT, AKINCI VS.)</p>
+                </div>
+                <div class="channel-name">
+                    <p>Ruhi Çenet Medya</p>
+                </div>
+                <div class="views-time">
+                    <p>355k views ・<span>14 hours ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+            </div>
+
+            <div class="group-1">
+
+<div class="area1">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/enginvideo2.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="(100+ Saat ) Aranan Programcı Olma Kamp Kursu : PYTHON-JAVA-C#">
+            <div class="channel">
+                <img src="images/engin.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>(100+ Saat ) Aranan Programcı Olma Kamp Kursu : PYTHON-JAVA-C#</p>
+                </div>
+                <div class="channel-name">
+                    <p>Engin Demiroğ</p>
+                </div>
+                <div class="views-time">
+                    <p>68k views ・<span>1 year ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/rehbermatematikvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="49 GÜNDE TYT MATEMATİK KAMPI BAŞLIYOR | 2021 TAYFA rehber matematik #rmtayfa">
+            <div class="channel">
+                <img src="images/rehbermatematik.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>49 GÜNDE TYT MATEMATİK KAMPI BAŞLIYOR | 2021 TAYFA rehber...</p>
+                </div>
+                <div class="channel-name">
+                    <p>Rehber Matematik</p>
+                </div>
+                <div class="views-time">
+                    <p>2,2M views ・<span>11 months ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+              <div class="area2">
+                <div class="video1">
+                    <div class="video-thumbnail">
+                        <img src="images/farukvideo.webp" alt="">
+                    </div>
+                    <div class="video-channel-text" title="Antarktika Buzlarının Altında Ne Var?">
+                        <div class="channel">
+                            <img src="images/faruk.jpg" alt="">
+                        </div>
+                        <div class="text" id="pre">
+                            <div class="video-title">
+                                <p>Antarktika Buzlarının Altında Ne Var?</p>
+                            </div>
+                            <div class="channel-name">
+                                <p>Faruk Yılmaz</p>
+                            </div>
+                            <div class="views-time">
+                                <p>768K views ・<span>8 months ago</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video1">
+                    <div class="video-thumbnail">
+                        <img src="images/sekizsilindirvideo.webp" alt="">
+                    </div>
+                    <div class="video-channel-text"
+                        title="GÜNDELİK | Audi A6 3.0 TDi Quattro - C6 Kasa | Tüketim, Masraf, Kronik Sorunlar ve Her Şey">
+                        <div class="channel">
+                            <img src="images/sekizsilindir.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="video-title">
+                                <p>GÜNDELİK | Audi A6 3.0 TDi Quattro - C6 Kasa | Tüketim, Masraf, Kronik Sorunlar...
+                                </p>
+                            </div>
+                            <div class="channel-name">
+                                <p>Sekizsilindir</p>
+                            </div>
+                            <div class="views-time">
+                                <p>101k views ・<span>2 days ago</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="group-2">
+
+<div class="area1">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/autotopnlvideo2.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="440HP FORD FOCUS RS MK3 REVIEW on AUTOBAHN [NO SPEED LIMIT] by AutoTopNL">
+            <div class="channel">
+                <img src="images/autotopnl.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>440HP FORD FOCUS RS MK3 REVIEW on AUTOBAHN [NO SPEED LIMIT]...</p>
+                </div>
+                <div class="channel-name">
+                    <p>AutoTopNL</p>
+                </div>
+                <div class="views-time">
+                    <p>799k views ・<span>10 months ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/oguzhanvideo3.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="EN KONFORLU SUV MU? | 2020 CİTROEN C5 AİRCROSS 1.5 BLUEHDI | SOKTUK ZORLADIK | DS7 CROSSBACK">
+            <div class="channel">
+                <img src="images/oguzhan.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>EN KONFORLU SUV MU? | 2020 CİTROEN C5 AİRCROSS 1.5 BLUEHDI | ÇAMURA...</p>
+                </div>
+                <div class="channel-name">
+                    <p>Oğuzhan YILDIRIM</p>
+                </div>
+                <div class="views-time">
+                    <p>170K views ・<span>7 months ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="area2">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/onurvideo3.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="PARASINA DEĞER Mİ? 🤑 Adobe Uygulamalarını SATIN ALMAK 💲 (Lisans mı Crack mi?)">
+            <div class="channel">
+                <img src="images/onur.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>PARASINA DEĞER Mİ? 🤑 Adobe Uygulamalarını SATIN ALMAK 💲...</p>
+                </div>
+                <div class="channel-name">
+                    <p>Onur Naci Ozturkler</p>
+                </div>
+                <div class="views-time">
+                    <p>37k views ・<span>8 months ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/sekizsilindirvideo2.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="KM CANAVARLARI | 30 yıllık ustasından 1.500.000km Favorit'e bakım">
+            <div class="channel">
+                <img src="images/sekizsilindir.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>KM CANAVARLARI | 30 yıllık ustasından 1.500.000km Favorit'e bakım</p>
+                </div>
+                <div class="channel-name">
+                    <p>Sekizsilindir</p>
+                </div>
+                <div class="views-time">
+                    <p>596K views ・<span>1 year ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+            </div>
+
+            <div class="group-3">
+
+<div class="area1">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/doganvideo2.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="Yerli Otomobilin İçini CEO’suyla Birlikte İnceledik">
+            <div class="channel">
+                <img src="images/dogan.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>Yerli Otomobilin İçini CEO’suyla Birlikte İnceledik</p>
+                </div>
+                <div class="channel-name">
+                    <p>Doğan Kabak</p>
+                </div>
+                <div class="views-time">
+                    <p>6,8M views ・<span>1 year ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/freecodecamporgvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="Introduction To Responsive Web Design - HTML & CSS Tutorial">
+            <div class="channel">
+                <img src="images/freecodecamp.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>Introduction To Responsive Web Design - HTML & CSS Tutorial</p>
+                </div>
+                <div class="channel-name">
+                    <p>freeCodeCamp.org</p>
+                </div>
+                <div class="views-time">
+                    <p>525k views ・<span>1 year ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="area2">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/prototurkvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="React ve PHP">
+            <div class="channel">
+                <img src="images/prototurk.jpg" alt="">
+            </div>
+            <div class="text" id="pre">
+                <div class="video-title">
+                    <p>React ve PHP</p>
+                </div>
+                <div class="channel-name">
+                    <p>PROTOTURK</p>
+                </div>
+                <div class="views-time">
+                    <p>3,9k views ・<span>1 week ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/prototurkvideo3.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="HTML Dersleri -1 / Giriş">
+            <div class="channel">
+                <img src="images/prototurk.jpg" alt="">
+            </div>
+            <div class="text" id="pre">
+                <div class="video-title">
+                    <p>HTML Dersleri -1 / Giriş</p>
+                </div>
+                <div class="channel-name">
+                    <p>PROTOTURK</p>
+                </div>
+                <div class="views-time">
+                    <p>197k views ・<span>2 years ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+            </div>
+
+            <div class="group-4">
+
+<div class="area1">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/aslanosmanvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="BAŞARDIM ! (2. Bölüm) Amerika’da YAMAHA R6 ALDIM !">
+            <div class="channel">
+                <img src="images/aslanosman.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>BAŞARDIM ! (2. Bölüm) Amerika’da YAMAHA R6 ALDIM !</p>
+                </div>
+                <div class="channel-name">
+                    <p>ASLAN OSMAN</p>
+                </div>
+                <div class="views-time">
+                    <p>5,6k views ・<span>8 hours ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/oguzhanvideo2.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="A101 DE SATILAN ARAÇ BAKIM ÜRÜNLERİNİ PASSAT’TA DENEDİM | 5 LİRALIK FAR PARLATMA | ÇİZİK GİDERİCİ">
+            <div class="channel">
+                <img src="images/oguzhan.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>A101 DE SATILAN ARAÇ BAKIM ÜRÜNLERİNİ PASSAT’TA DENEDİM...</p>
+                </div>
+                <div class="channel-name">
+                    <p>Oğuzhan YILDIRIM</p>
+                </div>
+                <div class="views-time">
+                    <p>5,3K views ・<span>1 hour ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="area2">
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/cinecomvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text" title="Editing Magic: Playing With TIME (Premiere Pro Tutorial)">
+            <div class="channel">
+                <img src="images/cinecom.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>Editing Magic: Playing With TIME (Premiere Pro Tutorial)</p>
+                </div>
+                <div class="channel-name">
+                    <p>Cinecom.net</p>
+                </div>
+                <div class="views-time">
+                    <p>111k views ・<span>2 days ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="video1">
+        <div class="video-thumbnail">
+            <img src="images/okanvideo.webp" alt="">
+        </div>
+        <div class="video-channel-text"
+            title="Yeni Twitch Bilgisayarım! | Aldığım Ekipmanlar Ne Kadar Tuttu?">
+            <div class="channel">
+                <img src="images/okan.jpg" alt="">
+            </div>
+            <div class="text">
+                <div class="video-title">
+                    <p>Yeni Twitch Bilgisayarım! | Aldığım Ekipmanlar Ne Kadar Tuttu?</p>
+                </div>
+                <div class="channel-name">
+                    <p>Okan Serbes</p>
+                </div>
+                <div class="views-time">
+                    <p>17k views ・<span>6 hours ago</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+</body>
+<script src="script.js"></script>
+
+</html>
